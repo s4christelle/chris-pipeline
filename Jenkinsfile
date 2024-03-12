@@ -5,7 +5,7 @@ pipeline {
       choice choices: ['DOLLAR', 'EURO', 'FCFA'], description: 'CHOOSE YOUR CURRENCY', name: 'MONEY'
       string defaultValue: 'Christelle', description: 'What\'s your first name?', name: 'NAME'
     }
-    }
+    
       
     stages {
         stage('build') {
