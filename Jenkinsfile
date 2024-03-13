@@ -1,19 +1,17 @@
 pipeline {
     agent any
     parameters {
-      choice choices: ['CAMEROON', 'TOGO', 'SENEGAL', 'USA'], description: 'What is your country?', name: 'COUNTRY'
-      choice choices: ['DOLLAR', 'EURO', 'FCFA'], description: 'CHOOSE YOUR CURRENCY', name: 'MONEY'
-      string defaultValue: 'Christelle', description: 'What\'s your first name?', name: 'NAME'
+      choice choices: ['CAMEROON', 'USA ', 'BENIN'], description: 'What is your country?', name: 'COUNTRY'
+      string defaultValue: 'DETERGENT', description: 'What is your soap\'s name?', name: 'SOAP'
     }
-    
-      
+
+
     stages {
         stage('build') {
             steps {
                 echo 'Hello World'
             }
         }
-        
 
 
 
@@ -22,18 +20,23 @@ pipeline {
                 echo 'Hello World'
             }
         }
-
-
-
-
-
+    
+    
+    
         stage('deploy') {
             steps {
                 echo 'Hello World'
             }
         }
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
-}
-        
+ 
+}   
