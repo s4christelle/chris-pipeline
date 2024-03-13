@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-      choice choices: ['CAMEROON', 'USA ', 'BENIN'], description: 'What is your country?', name: 'COUNTRY'
+      choice choices: ['CAMEROON', 'USA', 'BENIN'], description: 'What is your country?', name: 'COUNTRY'
       string defaultValue: 'DETERGENT', description: 'What is your soap\'s name?', name: 'SOAP'
     }
 
